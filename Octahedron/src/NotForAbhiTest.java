@@ -1,4 +1,8 @@
-
+/*
+ * Kenny Fung
+ * Homework 13 (programming)  
+ * Octahedron
+ */
 
 import java.awt.*;
 import java.applet.*;

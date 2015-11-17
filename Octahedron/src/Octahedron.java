@@ -1,4 +1,8 @@
-
+/*
+ * Kenny Fung
+ * Homework 13 (programming)  
+ * Octahedron
+ */
 
 import javax.vecmath.*;
 import com.sun.j3d.utils.geometry.GeometryInfo;
