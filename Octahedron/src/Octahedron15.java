@@ -1,7 +1,7 @@
 /*
  * Kenny Fung
  * Luis Banegas
- * Homework 13 (programming)  
+ * Homework 15 (programming)  
  * Octahedron
  */
 
@@ -10,10 +10,12 @@ import com.sun.j3d.utils.geometry.GeometryInfo;
 import com.sun.j3d.utils.geometry.NormalGenerator;
 import javax.media.j3d.*;
 
-public class Octahedron extends IndexedTriangleArray {
-	public Octahedron() {
+public class Octahedron15 extends IndexedTriangleArray {
+	public Octahedron15() {
 
-	    super(8, TriangleArray.COORDINATES | TriangleArray.NORMALS, 24);
+		super(8, GeometryArray.COORDINATES | 
+				GeometryArray.NORMALS | GeometryArray.COLOR_3, 24);
+		
 		// Vertices.
 		setCoordinate(0, new Point3f(0,0,1));
 		setCoordinate(1, new Point3f(-1,0,0));
@@ -45,5 +47,14 @@ public class Octahedron extends IndexedTriangleArray {
 		// Setting Coordinates and Normal Indices
 		setCoordinateIndices(0, coords);
 		setNormalIndices(0,norms);
+
+		// Setting Color and the indice for color.
+		setColor(0, new Color3f(0,0,1));
+		setColor(1, new Color3f(0,1,0));
+		setColor(2, new Color3f(1,0,0));
+		setColor(3, new Color3f(1,0,1));
+		setColor(4, new Color3f(0,1,1));
+		setColor(5, new Color3f(1,0,1));
+		this.setColorIndices(0, coords);
 	}
 }
