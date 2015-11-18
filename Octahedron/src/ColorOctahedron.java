@@ -10,8 +10,8 @@ import com.sun.j3d.utils.geometry.GeometryInfo;
 import com.sun.j3d.utils.geometry.NormalGenerator;
 import javax.media.j3d.*;
 
-public class Octahedron15 extends IndexedTriangleArray {
-	public Octahedron15() {
+public class ColorOctahedron extends IndexedTriangleArray {
+	public ColorOctahedron() {
 
 		super(8, GeometryArray.COORDINATES | 
 				GeometryArray.NORMALS | GeometryArray.COLOR_3, 24);

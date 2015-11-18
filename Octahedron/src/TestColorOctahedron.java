@@ -14,9 +14,9 @@ import com.sun.j3d.utils.geometry.*;
 import java.applet.*;
 import com.sun.j3d.utils.applet.MainFrame;
 
-public class TestOctahedron15 extends Applet {
+public class TestColorOctahedron extends Applet {
 	public static void main(String[] args) {
-		new MainFrame(new TestOctahedron15(), 640, 480);
+		new MainFrame(new TestColorOctahedron(), 640, 480);
 	}
 
 	public void init() {
@@ -55,7 +55,7 @@ public class TestOctahedron15 extends Applet {
 		 */
 
 		// Creating shape
-		Shape3D shape = new Shape3D(new Octahedron15(), ap);
+		Shape3D shape = new Shape3D(new ColorOctahedron(), ap);
 
 
 		//rotating object
